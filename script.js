@@ -9,7 +9,7 @@ let priceService1 = prompt("Сколько услуга1 будет стоить
 let service2 = prompt("Какой дополнительный тип услуг нужен?")
 let priceService2 = prompt("Сколько услуга2 будет стоить?") 
 let fullPrice = (+screenPrice) + (+priceService1) + (+priceService2);
-let servicePercentPrice = fullPrice - 100 * rollback // как округлить число, так и не понял
+let servicePercentPrice = fullPrice - (fullPrice *(rollback / 100))
 
 
 if (fullPrice > 30000) {
