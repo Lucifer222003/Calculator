@@ -21,7 +21,6 @@ if ((fullPrice <= 15000) && (fullPrice => 0)) {
 if (fullPrice < -0) {
     console.log("Что то пошло не так");
 }
-
 console.log(title)
 console.log(screens)
 console.log(adaptive)
