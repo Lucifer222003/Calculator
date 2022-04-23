@@ -20,13 +20,13 @@ const getAllServicePrices = function() {
 };
 
 const getTitle = function () {
-    return title.trim()[0].toUpperCase() + title.trim()[1].toLowerCase()
-};
+    return title.trim()[0].toUpperCase() + title.trim().slice(1).toLowerCase()
+}; 
 const getServicePercentPrice = function() {
     return fullPrice - (fullPrice * (rollback / 100))
 };
 
-const getFullPrice = function() {
+function getFullPrice() {
     return screenPrice + allServicePrices;
 };
 
@@ -50,7 +50,7 @@ fullPrice = getFullPrice();
 servicePercentPrice = getAllServicePrices();
 title = getTitle(title);
 
-showTypeof(title(getTitle));
+showTypeof(title);
 showTypeof(screenPrice);
 showTypeof(adaptive);
 
